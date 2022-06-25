@@ -35,7 +35,7 @@ touch 12-file_type
 echo -e '#!/bin/bash\nfile /tmp/iamafile' > 12-file_type
 chmod u+x 12-file_type
 touch 13-symbolic_link
-echo -e '#!/bin/bash\nln -s /bin/sh ls' > 13-symbolic_link
+echo -e '#!/bin/bash\nln -s /bin/sh __ls__' > 13-symbolic_link
 chmod u+x 13-symbolic_link
 touch 14-copy_html
 echo -e '#!/bin/bash\ncp -u *.html ../' > 14-copy_html
@@ -55,4 +55,5 @@ chmod u+x 103-commas
 touch school.mgc
 echo -e '0 string SCHOOL School data\n!:mime School' > school.mgc
 chmod u+x school.mgc
+file -C -m school.mgc
 
