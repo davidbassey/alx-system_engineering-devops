@@ -20,7 +20,7 @@ echo -e '#!/bin/bash\nchmod 007 hello' > 8-James_Bond
 chmod u+x 8-James_Bond
 echo -e '#!/bin/bash\nchmod 753 hello' > 9-John_Doe
 chmod u+x 9-John_Doe
-echo -e '#!/bin/bash\nchmod -reference=olleh hello' > 10-mirror_permissions
+echo -e '#!/bin/bash\nchmod --reference=olleh hello' > 10-mirror_permissions
 chmod u+x 10-mirror_permissions
 echo -e '#!/bin/bash\nchmod a+X *' > 11-directories_permissions
 chmod u+x 11-directories_permissions
